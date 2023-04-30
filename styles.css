@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+ }
+
+@font-face{
+    font-family: 'HindSiliguri-Bold';
+    src: url(fonts/HindSiliguri-Bold.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'HindSiliguri-Light';
+    src: url(fonts/HindSiliguri-Light.ttf) format('truetype');
+}
+
+h1 {
+   font-size: 3rem;
+   color: #e4e4e4;
+   font-family: HindSiliguri-Bold;
+   letter-spacing: 6px;
+   text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+   line-height: 1.3em;
+}
+
+h1:hover {
+   color: #f6d605;
+}
+
+h2 {
+   font-size: 1.5rem;
+   font-weight: 400;
+   color: #e4e4e4;
+   font-family: HindSiliguri-Light;
+   letter-spacing: 3px;
+   text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+   line-height: 1.3em;
+   padding-bottom: 25px;
+}
+
+.description {
+    font-size: 0.8rem;
+    color: #e4e4e4;
+    font-family: HindSiliguri-Light;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+    line-height: 1.1em;
+    padding-top: 10px;
+ }
+ 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(circle, rgb(39, 39, 39) 0%, rgb(27, 27, 27) 100%);
+    border-radius: 11px;
+    box-shadow: 5px 5px 10px black;
+    border: 2px solid #0000000e;
+    overflow: hidden;
+    margin: 25px 25px 25px 25px;
+}
+
+.set {
+    margin: 20px 20px 20px 20px;
+}
+
+.drum {
+   outline: none;
+   border: 2px solid #f6d605;
+   font-size: 1.6rem;
+   font-family: 'arial';
+   text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+   line-height: 1.2em;
+   font-weight: 700;
+   color: #f6d605;
+   border-radius: 9px;
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   margin: 10px;
+   background-color: rgba(255, 255, 255, 0);
+   box-shadow: 0 3px 6px 0 #000000;
+   transition: transform .1s;
+}
+
+.drum:hover {
+
+    color: #e4e4e4;
+    transform: scale(0.98);
+ }
+
+.pressed {
+    box-shadow: 0 3px 6px 0 #000000;
+    border: 2px solid #e4e4e4;
+    color: #e4e4e4;
+    transform: scale(0.98);
+ }
